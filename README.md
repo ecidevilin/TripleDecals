@@ -10,7 +10,7 @@ Triple (or more) decals using single texture.
 
 ## Material
 
-![Material](pic/material.png)
+![Material](pic/mat.png)
 
 ## Result
 
