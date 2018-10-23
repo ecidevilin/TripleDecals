@@ -1,1 +1,17 @@
-# TrippleDecal
+# TripleDecals
+
+Triple (or more) decals using single texture.
+
+# Usage
+
+## Texture
+
+![Texture](pic/decal.png)
+
+## Material
+
+![Material](pic/material.png)
+
+## Result
+
+![Result](pic/result.png)
