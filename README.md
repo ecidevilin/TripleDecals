@@ -14,4 +14,4 @@ Triple (or more) decals using single texture.
 
 ## Result
 
-![Result](pic/result.png)
+![Result](pic/sphere.png)
