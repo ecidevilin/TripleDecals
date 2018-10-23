@@ -87,7 +87,7 @@ Material:
     - _DecalPosAndScale: {r: 0, g: -0.23, b: 1, a: 1}
     - _DecalPositionAndScale: {r: 0, g: 0, b: 0, a: 0}
     - _DecalSizeAndPos: {r: 0.66, g: 1.15, b: 0.67, a: 0.42}
-    - _DecalSizeAndPos1: {r: 1.36, g: 1, b: 0.59, a: 0.5}
-    - _DecalSizeAndPos2: {r: 0.57, g: 0.62, b: 0.76, a: 0.5}
-    - _DecalSizeAndPos3: {r: 0.61, g: 0.51, b: 0.63, a: 0.37}
+    - _DecalSizeAndPos1: {r: 1.25, g: 1, b: 0.5, a: 0.5}
+    - _DecalSizeAndPos2: {r: 0.5, g: 0.5, b: 0.6, a: 0.4}
+    - _DecalSizeAndPos3: {r: 0.25, g: 0.5, b: 0.6, a: 0.45}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
