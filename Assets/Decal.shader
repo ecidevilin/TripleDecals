@@ -53,14 +53,14 @@ SubShader{
 			};
 
 #define CAL_VERT_DECAL_UV(n) \
-	{o.uv##n.zw=(v.uv-_DecalSizeAndPos##n.zw) / _DecalSizeAndPos##n / _DecalTex_ST.xy; \
+	{o.uv##n.zw=(v.uv-_DecalSizeAndPos##n.zw) / _DecalSizeAndPos##n / _DecalTex_ST.xy + float2(0.5, 0.5); \
 	o.uv##n.xy=TRANSFORM_TEX(o.uv##n.zw, _DecalTex) + _DecalOffset##n.xy;}
 #define CAL_FRAG_DECAL_RGB(n) \
 	{half4 decal##n = tex2D(_DecalTex, i.uv##n); \
 	c.rgb = lerp(c.rgb, decal##n.rgb, decal##n.a * step(0, i.uv##n.z) * step(0, i.uv##n.w) * step(i.uv##n.z, 1) * step(i.uv##n.w, 1));}
 #define CAL_FRAG_DECAL_UI_RGB(n) \
 	{float4 uv##n; \
-	 uv##n.zw=(i.uv-_DecalSizeAndPos##n.zw) / _DecalSizeAndPos##n / _DecalTex_ST.xy; \
+	 uv##n.zw=(i.uv-_DecalSizeAndPos##n.zw) / _DecalSizeAndPos##n / _DecalTex_ST.xy + float2(0.5, 0.5); \
 	 uv##n.xy=TRANSFORM_TEX(uv##n.zw, _DecalTex) + _DecalOffset##n.xy; \
 	 half4 decal##n = tex2D(_DecalTex, uv##n); \
 	 c.rgb = lerp(c.rgb, decal##n.rgb, decal##n.a * step(0, uv##n.z) * step(0, uv##n.w) * step(uv##n.z, 1) * step(uv##n.w, 1));}
