@@ -5,6 +5,7 @@ Packages/
 ProjectSettings/
 Temp/
 UnityPackageManager/
+Logs/
 *.csproj
 *.opensdf
 *.sdf
